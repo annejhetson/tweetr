@@ -1,5 +1,7 @@
 .white {
-  color: white;
+  color: red;
+  position: relative;
+  top: 10px;
 }
 .container {
   margin: 30px 20px;
