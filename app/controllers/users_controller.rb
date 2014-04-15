@@ -6,5 +6,11 @@ class UsersController < ApplicationController
   end
 
   def index
+    @user = User.new
+  end
+
+  def show
+    @roar = Roar.new
+    @user = User.find(params[:id])
   end
 end

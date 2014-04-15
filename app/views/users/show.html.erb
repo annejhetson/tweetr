@@ -1,0 +1,7 @@
+
+<div class="container">
+  <%= form_for [@user, @roar] do |f|%>
+      <%= f.text_area :roar, :rows => 3, :placeholder => "yummy yummy chicken" %>
+      <%= f.submit "Roar", :class => "button tiny" %>
+  <% end %>
+</div>
