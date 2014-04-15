@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "letsgoharper@gmail.com"
+  default from: "aassddffddssasdfss@gmail.com"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
@@ -11,6 +11,6 @@ class UserMailer < ActionMailer::Base
     @greeting = "Hi"
     @name = @user.email[0..(@user.email.index('@')-1)]
 
-    mail to: user.email, subject: "Welcome to Tweetr"
+    mail to: @user.email, subject: "Welcome to Tweetr"
   end
 end
