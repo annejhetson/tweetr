@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'capybara'
 gem 'devise'
 gem 'foundation-rails'
+gem 'rails_12factor'
 
 group :development do
   gem 'better_errors'
