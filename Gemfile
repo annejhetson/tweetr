@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'devise'
 gem 'foundation-rails'
 gem 'rails_12factor'
+gem "paperclip", "~> 4.1"
 
 group :development do
   gem 'better_errors'

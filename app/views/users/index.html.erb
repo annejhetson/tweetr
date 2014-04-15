@@ -1,2 +1,7 @@
 <a href ="/emailme" class="button expand">Email me</a>
+<ul>
+    <% Roar.order(:id).each do |roar| %>
+      <a href="/users/<%= roar.user.id %>"><li class='button tiny margin-small color<%= rand(1..5) %>'><%= roar.roar %> @<%= roar.user.email[0..(roar.user.email.index('@')-1)] %></li></a>
+    <% end %>
+  </ul>
 

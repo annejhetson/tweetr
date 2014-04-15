@@ -6,3 +6,33 @@
 .container {
   margin: 30px 20px;
 }
+.color1{
+  background-color: #890927;
+}
+.color2{
+  background-color: #D90000;
+}
+.color3{
+  background-color: #FF2D00;
+}
+.color4{
+  background-color: #FF8C00;
+}
+.color5{
+  background-color: #04756F;
+}
+.margin-small {
+  margin: 2px 0px;
+}
+body {
+  background-image: url("congruent_outline.png");
+}
+.red {
+  color: white;
+}
+h2 {
+  color: white;
+}
+label {
+  color: white;
+}
