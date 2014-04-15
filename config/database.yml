@@ -1,0 +1,11 @@
+development:
+  adapter: postgresql
+  database: tweetr_development
+
+test:
+  adapter: postgresql
+  database: tweetr_test
+
+production:
+  adapter: postgresql
+  database: tweetr_production
