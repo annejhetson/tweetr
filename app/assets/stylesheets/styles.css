@@ -36,3 +36,15 @@ h2 {
 label {
   color: white;
 }
+.addAvButton {
+  position: absolute;
+  margin-top: -10px;
+  margin-left: 7px;
+  border-radius: 25px;
+}
+.advPic {
+  position: absolute;
+  margin-top: -2px;
+  margin-left: 7px;
+  border-radius: 25px;
+}

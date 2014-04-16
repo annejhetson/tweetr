@@ -1,0 +1,10 @@
+<% if @avatar %>
+  <%= image_tag current_user.avatar.avatar.url(:medium) %>
+  <% else %>
+  <h3> Me have no photos!</h3>
+  <%= form_for [@user, @new_avatar], :html => { :multipart => true } do |f| %>
+    <%= f.file_field :avatar %>
+    <%= f.hidden_field :user_id, value: current_user.id %>
+    <%= f.submit %>
+    <% end %>
+<% end %>
