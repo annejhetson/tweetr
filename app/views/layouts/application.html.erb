@@ -37,7 +37,8 @@
       <% else %>
         <a href="/users/<%= current_user.id %>" class="white"><li>Welcome <%= current_user.email[0..(current_user.email.index('@')-1)] %></li></a>
         <%if current_user.avatar == nil %>
-          <a href="/users/<%= current_user.id %>/avatars/new" class="addAvButton button tiny"><li>Add Avatar</li></a>
+
+          <%= link_to "Add Avatar", "/users/#{current_user.id}/avatars/new",  :id => "new_link", :class => "addAvButton button tiny", remote: true %>
         <% else %>
           <%= image_tag current_user.avatar.avatar.url(:thumb), width: "50px" , :class => "advPic" %>
         <% end %>

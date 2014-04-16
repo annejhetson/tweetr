@@ -6,7 +6,7 @@ class AvatarsController < ApplicationController
   end
   def create
     @user = current_user
-    @avatar = Avatar.create(params.require(:avatar).permit(:user_id, :avatar))
+    @avatar = Avatars.create(params.require(:avatar).permit(:user_id, :avatar))
     redirect_to "/"
   end
 end
